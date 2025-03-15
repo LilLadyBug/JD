@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #333;
+            text-align: center;
+        }
+        .skill {
+            margin: 10px 0;
+            padding: 10px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            display: block;
+            width: 100%;
+        }
+        .skill:hover {
+            background: #0056b3;
+        }
+        .description {
+            display: none;
+            margin-top: 10px;
+            color: #333;
+        }
+        header, footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tweets.html">Tweets</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <article class="container">
+            <h1>My Skills Showcase</h1>
+            <h2>Explore My Expertise</h2>
+            <h3>Click below to learn more:</h3>
+            
+            <button class="skill" onclick="showDescription('cybersecurity')">Cybersecurity</button>
+            <p id="cybersecurity" class="description">Skilled in security frameworks, SIEM, firewalls, and threat analysis.</p>
+            
+            <button class="skill" onclick="showDescription('networking')">Networking</button>
+            <p id="networking" class="description">Experience with firewalls, VLANs, IPsec, and network configurations.</p>
+            
+            <button class="skill" onclick="showDescription('server-admin')">Server Administration</button>
+            <p id="server-admin" class="description">Proficient in Windows Server, Active Directory, and virtualization.</p>
+            
+            <button class="skill" onclick="showDescription('web-dev')">Web Development</button>
+            <p id="web-dev" class="description">Experience in HTML, CSS, JavaScript, React, and WordPress.</p>
+            
+            <p>Check out my latest work and projects to see these skills in action.</p>
+            <a href="https://apply.holbertonschool.com" target="_blank">
+                <img src="https://apply.holbertonschool.com/holberton-logo.png" alt="Holberton Logo" width="200">
+            </a>
+        </article>
+        <aside>
+            <p>Placeholder to add comment thread later.</p>
+        </aside>
+    </main>
+    
+    <footer>
+        <p>Made by Jeya Divya Natesan for <a href="https://apply.holbertonschool.com" target="_blank">Holberton School</a>.</p>
+    </footer>
+    
+    <script>
+        function showDescription(id) {
+            var desc = document.getElementById(id);
+            if (desc.style.display === "none" || desc.style.display === "") {
+                desc.style.display = "block";
+            } else {
+                desc.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

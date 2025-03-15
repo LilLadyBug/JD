@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Ensures full viewport height */
+    margin: 0;
+    align-items: center; /* Centers content horizontally */
+    justify-content: center; /* Centers content vertically */
+    width: 100vw; /* Ensures body takes full width */
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    width: 100%; /* Ensures main takes full available width */
+    max-width: 1200px; /* Ensures it doesn't get too wide */
+}
+
+article {
+    flex: 2;
+    overflow-y: auto;
+}
+
+aside {
+    flex: 1;
+    overflow-y: auto;
+}
+
+header, footer {
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+    width: 100%; /* Match main width for alignment */
+    max-width: 1200px;
+}
